@@ -1,21 +1,27 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
-import FlatButton from '../Components/button';
+import { StyleSheet, Text, View, Image, Pressable, ScrollView} from 'react-native';
 
-export default function App() {
+export default function Home({ navigation }) {
   return (
+    <ScrollView>
     <View style={styles.container}>
       <Image style={styles.logo} source={require('../assets/logo.png')} />
       <Text style={styles.food}>Food For {"\n"} Everyone</Text>
       <Image style={styles.people} source={require('../assets/people.png')} />
-      <FlatButton />
+       
+       <Pressable style={styles.press} onPress={() => navigation.navigate('login')}>
+        <Text style={styles.buttonText}>Get Started</Text>
+       </Pressable>
+     
     </View>
+    </ScrollView>
+    
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#FF4B3A',
-    paddingBottom: 80,
+    paddingBottom: 70,
     paddingTop: 70,
   },
   logo: {
@@ -28,11 +34,27 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 60,
     textAlign: 'center',
+    marginRight: 60,
     paddingBottom: 50,
     paddingTop: 30,
   },
   people : {
     height: 400,
     width : 430,
-  }
+  },
+  press : {
+    borderRadius: 30,
+    padding: 20,
+    marginRight: 50,
+    marginLeft: 50,
+    backgroundColor: 'white',
+    marginTop: 30,
+  },
+  buttonText: {
+    color: '#FF4B3A',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    fontSize: 16,
+    textAlign: 'center',
+}
 }); 
