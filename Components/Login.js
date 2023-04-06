@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         paddingRight: 90,
       paddingTop: 50,
+      fontFamily: 'kanit-bold',
     },
     mail : {
        paddingTop: 50,
@@ -88,7 +89,8 @@ const styles = StyleSheet.create({
     },
     add :{
         fontSize: 15,
-        fontWeight: '500'
+        fontWeight: '500',
+        fontFamily: 'kanit-bold',
     },
     forgot : {
         paddingLeft: 50,
@@ -96,7 +98,8 @@ const styles = StyleSheet.create({
         paddingBottom: 30,
         color: '#FA4A0C',
         fontSize: 16,
-        fontWeight: '500'
+        fontWeight: '500',
+        fontFamily: 'kanit-bold',
     },
     sign: {
       paddingLeft: 50,
@@ -104,6 +107,7 @@ const styles = StyleSheet.create({
       fontSize: 16,
       fontWeight: '500',
       paddingTop: 50,
+      fontFamily: 'kanit-bold',
     },
     up: {
       flexDirection: 'row',
@@ -123,5 +127,6 @@ const styles = StyleSheet.create({
       textTransform: 'uppercase',
       fontSize: 16,
       textAlign: 'center',
+      fontFamily: 'kanit-bold',
   }
 }); 

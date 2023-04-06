@@ -30,29 +30,29 @@ export default function Food({ navigation }) {
     </View>
 
     <View>
-      <View style={styles.veg}>
+      <Pressable onPress={() => navigation.navigate('Veggie')} style={styles.veg}>
        <Image source={require('../assets/veggie.png')} />
        <Text style={styles.mix}>Veggie tomato mix</Text>
        <Text style={styles.mon}>$500</Text>
-      </View>
+      </Pressable>
 
-      <View style={styles.veg}>
+      <Pressable onPress={() => navigation.navigate('Egg')} style={styles.veg}>
        <Image source={require('../assets/egg.png')} />
        <Text style={styles.mix}>Egg and cucumber</Text>
        <Text style={styles.mon}>$500</Text>
-      </View>
+      </Pressable>
 
-      <View style={styles.veg}>
+      <Pressable onPress={() => navigation.navigate('Fried')} style={styles.veg}>
        <Image source={require('../assets/fried.png')} />
        <Text style={styles.mix}>Fried Chicken mix</Text>
        <Text style={styles.mon}>$500</Text>
-      </View>
+      </Pressable>
 
-      <View style={styles.veg}>
+      <Pressable onPress={() => navigation.navigate('Moi')} style={styles.veg}>
        <Image source={require('../assets/moi.png')} />
        <Text style={styles.mix}>Moi-moi and ekpa</Text>
        <Text style={styles.mon1}>$500</Text>
-      </View>
+      </Pressable>
     </View>
    
     </ScrollView>
@@ -75,11 +75,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingLeft: 35,
     paddingTop: 40,
+    fontFamily: 'kanit-bold',
    },
    deli2 : {
     fontSize: 40,
     fontWeight: 'bold',
     paddingLeft: 35,
+    fontFamily: 'kanit-bold',
    },
    myin : {
     flexDirection: 'row',
@@ -102,6 +104,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     paddingTop: 30,
     paddingBottom: 20,
+    fontFamily: 'kanit-bold',
    },
    mon : {
     color: '#FA4A0C',
@@ -109,6 +112,7 @@ const styles = StyleSheet.create({
     marginLeft: 120,
     paddingBottom: 50,
     fontSize: 18,
+    fontFamily: 'kanit-bold',
    },
    mon1 : {
     color: '#FA4A0C',
@@ -116,5 +120,6 @@ const styles = StyleSheet.create({
     marginLeft: 120,
     paddingBottom: 110,
     fontSize: 18,
+    fontFamily: 'kanit-bold',
    }
   }); 

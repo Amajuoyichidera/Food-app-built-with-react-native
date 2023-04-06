@@ -32,11 +32,12 @@ const styles = StyleSheet.create({
   food: {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: 60,
+    fontSize: 55,
     textAlign: 'center',
     marginRight: 60,
     paddingBottom: 50,
     paddingTop: 30,
+    fontFamily: 'kanit-bold',
   },
   people : {
     height: 400,
@@ -56,5 +57,6 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     fontSize: 16,
     textAlign: 'center',
+    fontFamily: 'kanit-bold',
 }
 }); 
